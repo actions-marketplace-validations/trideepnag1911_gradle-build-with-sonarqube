@@ -1,0 +1,12 @@
+name: "Gradle Build with Sonarqube"
+description: "Gradle build to generate jar with sonarqube scan"
+author: "Trideep Nag <trideepnag@gmail.com>"
+inputs:
+  build_path:  
+    description: 'Path requires to build'
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.build_path }}
