@@ -27,7 +27,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        uses: trideepnag1911/gradle-build-with-sonarqube@main
+        uses: actions/gradle-build-with-sonarqube@v1.0
 ```
 You need to setup secret for the variable SONAR_HOST_URL & SONAR_TOKEN preior to use this action.
 
@@ -49,7 +49,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        uses: trideepnag1911/gradle-build-with-sonarqube@main
+        uses: actions/gradle-build-with-sonarqube@v1.0
         with:
           build_path: /src
 ```
