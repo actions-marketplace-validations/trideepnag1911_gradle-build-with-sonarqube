@@ -1,6 +1,9 @@
 name: "Gradle Build with Sonarqube"
 description: "Gradle build to generate jar with sonarqube scan"
 author: "Trideep Nag <trideepnag@gmail.com>"
+branding:
+  icon: 'activity'
+  color: 'blue'
 inputs:
   build_path:  
     description: 'Path requires to build'
